@@ -1,7 +1,8 @@
 ---
 layout: nodes.liquid
-date: Last Modified
+section: smartContract
 title: "Example Projects"
+date: Last Modified
 permalink: "docs/example-projects/"
 ---
 # Hackathons
