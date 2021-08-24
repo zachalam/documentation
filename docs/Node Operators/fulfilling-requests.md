@@ -20,6 +20,13 @@ With your own Oracle contract, you can use your own node to fulfill requests. Th
 >
 > IN OLDER VERSIONS: Go to `configuration` in your node. You'll see `ACCOUNT_ADDRESS`. This is the address of your node. Send this address ETH. You can find testnet ETH on various [faucets](../link-token-contracts/). If you don't see `ACCOUNT_ADDRESS` there, check the 'Keys' tab and scroll down
 
+## Terminology
+
+There will be several wallets you'll be working with in your node. Here's the terminology for each of them:
+- `Node Address`: This is the address of your Chainlink Node wallet. It needs to be funded with a native blockchain token (ie: ETH) at all times in order to respond to requests. It is auto-generated when you start a new Chainlink node. In Node's GUI it corresponds to `ACCOUNT_ADDRESS`.
+- `Oracle Contract`: This is your `Operator.sol` and/or `Oracle.sol` contract deployed to a blockchain. It should **not** be funded with any native blockchain token (ie: ETH). When making API call requests, they will "flow" through this contract to interact with your Chainlink node. This will be the address smart contract developers point to when choosing a node to make an API call to. In Node's GUI it corresponds to `YOUR_ORACLE_CONTRACT_ADDRESS`.
+- `Admin Wallet`: This is the wallet that owns your `Operator.sol` and/or `Oracle.sol` contract addresses. If you're on OCR, this is the wallet address that will receive LINK token.
+
 ## Deploy your own Oracle contract
 
 - Go to [Remix](https://remix.ethereum.org/#optimize=true&version=soljson-v0.4.24+commit.e67f0147.js&url=https://github.com/smartcontractkit/documentation/blob/main/_includes/samples/NodeOperators/Oracle.sol) and expand the gist menu
