@@ -1,7 +1,7 @@
 export const NETWORKS = [
   {
     page: "ethereum-addresses",
-    title: "Ethereum Price Feeds",
+    title: "Ethereum Data Feeds",
     networks: [
       {
         name: "Ethereum Mainnet",
@@ -25,7 +25,7 @@ export const NETWORKS = [
   },
   {
     page: "binance-smart-chain-addresses-price",
-    title: "Binance Smart Chain Price Feeds",
+    title: "Binance Smart Chain Data Feeds",
     networks: [
       {
         name: "BSC Mainnet",
@@ -43,7 +43,7 @@ export const NETWORKS = [
   },
   {
     page: "matic-addresses",
-    title: "Polygon (Matic) Price Feeds",
+    title: "Polygon (Matic) Data Feeds",
     networks: [
       {
         name: "Polygon Mainnet",
@@ -61,7 +61,7 @@ export const NETWORKS = [
   },
   {
     page: "xdai-price-feeds",
-    title: "xDai Price Feeds",
+    title: "xDai Data Feeds",
     networks: [
       {
         name: "xDai Mainnet",
@@ -73,7 +73,7 @@ export const NETWORKS = [
   },
   {
     page: "huobi-eco-chain-price-feeds",
-    title: "Huobi Eco Chain Price Feeds",
+    title: "Huobi Eco Chain Data Feeds",
     networks: [
       {
         name: "Huobi Mainnet",
@@ -85,7 +85,7 @@ export const NETWORKS = [
   },
   {
     page: "avalanche-price-feeds",
-    title: "Avalanche Price Feeds",
+    title: "Avalanche Data Feeds",
     networks: [
       {
         name: "Avalanche Mainnet",
@@ -121,7 +121,7 @@ export const NETWORKS = [
   },
   {
     page: "arbitrum-price-feeds",
-    title: "Arbitrum Price Feeds",
+    title: "Arbitrum Data Feeds",
     networks: [
       {
         name: "Arbitrum Mainnet",
@@ -139,7 +139,7 @@ export const NETWORKS = [
   },
   {
     page: "harmony-price-feeds",
-    title: "Harmony Price Feeds",
+    title: "Harmony Data Feeds",
     networks: [
       {
         name: "Harmony Testnet",
@@ -151,7 +151,7 @@ export const NETWORKS = [
   },
   {
     page: "solana-price-feeds",
-    title: "Solana Price Feeds",
+    title: "Solana Data Feeds",
     networks: [
       {
         name: "Solana Devnet",

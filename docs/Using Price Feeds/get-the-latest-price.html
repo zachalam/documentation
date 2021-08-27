@@ -2,12 +2,12 @@
 layout: nodes.liquid
 section: smartContract
 date: Last Modified
-title: "Consuming Price Feeds"
+title: "Consuming Data Feeds"
 permalink: "docs/get-the-latest-price/"
-whatsnext: {"Historical Price Data":"/docs/historical-price-data/", "Price Feeds API Reference":"/docs/price-feeds-api-reference/", "Price Feeds Contract Addresses":"/docs/reference-contracts/"}
+whatsnext: {"Historical Price Data":"/docs/historical-price-data/", "Data Feeds API Reference":"/docs/price-feeds-api-reference/", "Data Feeds Contract Addresses":"/docs/reference-contracts/"}
 metadata:
-  title: "Consuming Price Feeds"
-  description: "How to use Chainlink Price Feeds in your smart contracts."
+  title: "Consuming Data Feeds"
+  description: "How to use Chainlink Data Feeds in your smart contracts."
   image:
     0: "/files/OpenGraph_V3.png"
 ---
@@ -15,22 +15,22 @@ metadata:
 
 Price data feeds are available on the following networks:
 - [EVM-compatible networks](#ethereum-network-examples)
-- [Solana networks](#solana-network-examples)
+- [Solana network](#solana-network-examples)
 
 To get a full list of supported blockchains for price feeds, see the [Price Feeds Contract Addresses](../reference-contracts/) page.
 
 > 📘 Note
 >
-> The full list of price feeds for each network are available from [Price Feed Contracts](../reference-contracts/).
+> The full list of data feeds for each network are available from [Data Feed Contracts](../reference-contracts/).
 
 > 📘 New Feed Registry
-> You can now use the [Feed Registry](../feed-registry/) to reference price feed assets by name or currency identifier instead of pair/proxy address.
+> You can now use the [Feed Registry](../feed-registry/) to reference data feed assets by name or currency identifier instead of pair/proxy address.
 
 ## Ethereum network examples
 
-You can get the latest price of Ethereum (ETH) inside smart contracts. For development and testing, use the [ETH/USD Price Feed](https://kovan.etherscan.io/address/0x9326BFA02ADD2366b30bacB125260Af641031331) on the Kovan testnet.
+You can get the latest price of Ethereum (ETH) inside smart contracts. For development and testing, use the [ETH/USD Data Feed](https://kovan.etherscan.io/address/0x9326BFA02ADD2366b30bacB125260Af641031331) on the Kovan testnet.
 
-You can consume price feed data using examples from one of the following languages:
+You can consume data feed data using examples from one of the following languages:
 
 - [Solidity](#solidity)
 - [Javascript](#javascript)
@@ -38,7 +38,7 @@ You can consume price feed data using examples from one of the following languag
 
 ### Solidity
 
-To consume price data, your smart contract should reference [`AggregatorV3Interface`](https://github.com/smartcontractkit/chainlink/blob/master/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol), which defines the external functions implemented by Price Feeds.
+To consume price data, your smart contract should reference [`AggregatorV3Interface`](https://github.com/smartcontractkit/chainlink/blob/master/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol), which defines the external functions implemented by Data Feeds.
 
 ```solidity Kovan
 {% include samples/PriceFeeds/PriceConsumerV3.sol %}
@@ -53,7 +53,7 @@ To consume price data, your smart contract should reference [`AggregatorV3Interf
     </div>
 </div>
 
-The `latestRoundData` function returns five values representing information about the latest price data. See [Price Feeds API Reference](../price-feeds-api-reference/) for more details.
+The `latestRoundData` function returns five values representing information about the latest price data. See [Data Feeds API Reference](../price-feeds-api-reference/) for more details.
 
 ### Javascript
 
@@ -111,9 +111,9 @@ In comparison to Solidity, the combination of an account and a program is equiva
     </div>
 </div>
 
-## How Do Price Feeds Get Their Data?
+## How Do Data Feeds Get Their Data?
 
-Price Feeds are aggregated from many data sources by a decentralized set of independent Node Operators. The [Decentralized Data Model](../architecture-decentralized-model/) describes this in detail.
+Data Feeds are aggregated from many data sources by a decentralized set of independent Node Operators. The [Decentralized Data Model](../architecture-decentralized-model/) describes this in detail.
 
 ## More Aggregator Functions
 
